@@ -6,10 +6,10 @@
 ## This functions creates a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
-        inverse <- NULL
-        set <- function(y) {
+        inverse <- NULL                           ## inistializ the inverse
+        set <- function(y) {                      ## define set function
                 x <<- y 
-                inverse <<- NULL
+                inverse <<- NULL                  ## reset inverse to NULL when there is a new function
 
 }
         get <- function() x
